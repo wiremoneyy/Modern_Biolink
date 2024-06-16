@@ -1,0 +1,17 @@
+@import url(variables.css);@font-face{font-family:'j';font-weight:400;src:url(../fonts/SpaceMono-Regular.ttf);font-display:swap}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}::selection{background-color:var(--selection)}::-webkit-scrollbar{-webkit-appearance:none;width:4px;height:4px}::-webkit-scrollbar-button{display:none}::-webkit-scrollbar-thumb{background-color:var(--accent)}*{font-family:'j';margin:0}html{scroll-behavior:smooth}h1,span{font-weight:400;color:var(--text)}.lnk{text-decoration:none;color:var(--text);transition:.6s ease-in-out}.lnk:hover{color:var(--texthov)}a{margin:0 10px 0 10px;text-decoration:none}body{background-color:var(--background);-webkit-animation-name:fadeIn;animation-name:fadeIn;animation-duration:1s}.g{display:flex;justify-content:center;align-items:center;flex-direction:column;height:80vh}i{font-style:normal;font-size:24px;padding-left:.2rem;padding-right:.2rem}.fa-brands{color:var(--icons);transition:.3s ease-in}.fa-brands:hover{color:var(--accent)}.okokok{display:flex;flex-direction:column;flex-wrap:wrap;align-items:center;border:2px solid var(--accent);border-radius:6px;padding:16px;margin:96px 32px;max-width:100%;min-width:200px}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fills the entire background area */
+    z-index: -1; /* Ensures video appears behind other content */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
