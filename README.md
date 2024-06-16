@@ -19,6 +19,6 @@
 
 ### Preview
 
-<img src="https://cdn.nest.rip/uploads/cc65ceb0-ab33-4777-a9e7-75a1e5c1b5f2.png](https://cdn.nest.rip/uploads/2a976493-aa9e-4c5c-9cec-ccb84d0a812d.png" width="90%">
+<img src="https://cdn.nest.rip/uploads/2a976493-aa9e-4c5c-9cec-ccb84d0a812d.png" width="90%">
 
 ### Originally by phase, edited and updated a little by Wiremoney
