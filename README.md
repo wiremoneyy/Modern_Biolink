@@ -1,7 +1,7 @@
 # biolink
 
 ## Updated Biolink, more modern now.
-```Credits to [Euro-pol](https://github.com/Euro-pol) for the click to enter. (love you)```
+Credits to [Euro-pol](https://github.com/Euro-pol) for the click to enter. (love you)
 
 ## Icons you can use: 
 ```html
