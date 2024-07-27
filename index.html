@@ -24,7 +24,7 @@
     </div>
 
     <audio loop id="audio">
-        <source src="One Dance.mp3" type="audio/mp3">
+        <source src="out.mp3" type="audio/mp3">
     </audio>
 
     <video autoplay loop muted id="background-video">
@@ -36,7 +36,7 @@
         <nav>
             <div style="display: flex;align-items: center;padding: 30px 10%;flex-wrap:wrap;">
                 <span style="margin-right: auto;">Wiremoney</span>
-                <a href="#about" class="lnk"><span style="color:var(--accent)">My</span> About me</a>
+                <a href="friends.html" class="lnk"><span style="color:var(--accent)">My</span> Friends</a>
             </div>
             </div>
         </nav>
@@ -61,9 +61,44 @@
     justify-content: center;
 ">
     </footer> 
-    <noscript><!-- No javascript used :) --></noscript>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/overlay.js"></script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!--hacked by https://github.com/Euro-pol-->
+    <script src="assets/js/overlay.js"></script>   
+    <script language=javascript>
+        var rev = "fwd";
+        function titlebar(val){
+            var msg  = "Wiremoney ╰（‵□′）╯";
+            var res = " ";
+            var speed = 400;
+            var pos = val;
+            var le = msg.length;
+            if(rev == "fwd"){
+                if(pos < le){
+                    pos = pos+1;
+                    scroll = msg.substr(0,pos);
+                    document.title = scroll;
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+                else {
+                    rev = "bwd";
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+            }
+            else {
+                if(pos > 0) {
+                    pos = pos-1;
+                    var ale = le-pos;
+                    scrol = msg.substr(ale,le);
+                    document.title = scrol;
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+                else {
+                    rev = "fwd";
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+            }
+        }
+        titlebar(0);
+    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <!--hacked by https://github.com/Euro-pol-->
       
 </body>
 </html>
