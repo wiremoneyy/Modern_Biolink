@@ -1,5 +1,9 @@
 # biolink
 
+# How to use:
+1. 'npm install lucide-react' into terminal
+2. upload and use
+
 ## Updated Biolink, more modern now.
 Credits to [Euro-pol](https://github.com/Euro-pol) for the click to enter. (love you)
 

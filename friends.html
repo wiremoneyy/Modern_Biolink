@@ -16,6 +16,33 @@
     <link rel="icon" sizes="192x192" href="assets/images/android-chrome-192x192.png" type="image/png">
     <link rel="icon" sizes="512x512" href="assets/images/android-chrome-512x512.png" type="image/png">
     <title>Wiremoney</title> 
+
+    <style>
+        #mute-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(139, 69, 19, 0.6); /* Semi-transparent brown */
+            color: #FFD700; /* Golden yellow for the icon */
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #mute-button:hover {
+            background-color: rgba(139, 69, 19, 0.8); /* Darker brown on hover */
+            color: #FFA500; /* Orange on hover */
+        }
+        #mute-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.5); /* Golden yellow focus ring */
+        }
+    </style>
 </head>
 
 <body>
@@ -25,9 +52,20 @@
         <p><i>Click to Enter</i></p>
     </div>
 
+    <video autoplay loop muted id="background-video">
+        <source src="https://pomf2.lain.la/f/08ccw5r.mp4" type="video/mp4">
+      </video>
+
     <audio loop id="audio">
         <source src="House.mp3" type="audio/mp3">
     </audio>
+
+    <button id="mute-button" aria-label="Mute">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+    </button>
     
     <header id="entrypoint">
 
@@ -57,6 +95,7 @@
     </footer> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/overlay.js"></script>     
+    <script src="assets/js/mute-button.js"></script>  
     <script language=javascript>
         var rev = "fwd";
         function titlebar(val){
