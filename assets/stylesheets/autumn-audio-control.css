@@ -1,0 +1,107 @@
+.autumn-audio-control {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(139, 69, 19, 0.7);
+    border-radius: 24px;
+    padding: 6px 10px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 48px;
+    height: 48px;
+    overflow: visible;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.autumn-audio-control:hover {
+    width: 200px;
+}
+
+#autumn-mute-button {
+    background-color: transparent;
+    color: #FFD700;
+    border: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    padding: 0;
+    margin-right: 8px;
+}
+
+#autumn-mute-button:hover {
+    transform: scale(1.1);
+}
+
+#autumn-mute-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.5);
+}
+
+.autumn-slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.autumn-audio-control:hover .autumn-slider-container {
+    width: 140px;
+}
+
+#autumn-volume-slider {
+    width: 130px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    -webkit-appearance: none;
+    background: transparent;
+    margin: 0;
+}
+
+.autumn-audio-control:hover #autumn-volume-slider {
+    opacity: 1;
+}
+
+#autumn-volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #FFD700;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: -4px;
+}
+
+#autumn-volume-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #FFD700;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+#autumn-volume-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 215, 0, 0.3);
+    border-radius: 2px;
+}
+
+#autumn-volume-slider::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 215, 0, 0.3);
+    border-radius: 2px;
+}
