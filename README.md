@@ -1,28 +1,43 @@
-# biolink
+# 🔗 Modern Biolink
 
-# How to use:
-1. 'npm install lucide-react' into terminal
-2. upload and use
+A sleek, customizable biolink page with social media icons and a click-to-enter feature.
 
-## Updated Biolink, more modern now.
-Credits to [Euro-pol](https://github.com/Euro-pol) for the click to enter. (love you)
+## ✨ Features
+- Modern, clean design
+- Smooth animations
+- Click-to-enter functionality
+- Support for popular social media platforms
+- Easy to customize
 
-## Icons you can use: 
-```html
-<i class="fa-brands telegram">
-<i class="fa-brands discord">
-<i class="fa-brands instagram">
-<i class="fa-brands github">
-<i class="fa-brands tiktok">
-<i class="fa-brands twitter">
-<i class="fa-brands youtube">
-<i class="fa-brands paypal">
-<i class="fa-brands steam">
-<i class="fa-brands snapchat">
-```
+## 🚀 Quick Start
+1. Install the required dependencies:
+   ```bash
+   npm install lucide-react
+   ```
+2. Upload the files to your hosting service
+3. Customize the links and styling to match your needs
 
-### Preview
+## 🎨 Supported Social Icons
+| Platform | Icon Code |
+|----------|-----------|
+| Telegram | `<i class="fa-brands telegram">` |
+| Discord | `<i class="fa-brands discord">` |
+| Instagram | `<i class="fa-brands instagram">` |
+| GitHub | `<i class="fa-brands github">` |
+| TikTok | `<i class="fa-brands tiktok">` |
+| Twitter | `<i class="fa-brands twitter">` |
+| YouTube | `<i class="fa-brands youtube">` |
+| PayPal | `<i class="fa-brands paypal">` |
+| Steam | `<i class="fa-brands steam">` |
+| Snapchat | `<i class="fa-brands snapchat">` |
 
-<img src="https://cdn.nest.rip/uploads/2a976493-aa9e-4c5c-9cec-ccb84d0a812d.png" width="90%">
+## 📸 Preview
+<img src="https://cdn.nest.rip/uploads/ce003459-7e4a-480b-a025-409977eb3c56.png" width="90%" alt="Biolink Preview">
 
-### Originally by phase, edited and updated a little by Wiremoney
+## 🙌 Credits
+- Original project by phase (now deleted)
+- Updates and improvements by Wiremoney
+- Click-to-enter feature by [Euro-pol](https://github.com/Euro-pol)
+
+## 📄 License
+Free to use and modify
